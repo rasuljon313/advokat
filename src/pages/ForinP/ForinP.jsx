@@ -1,4 +1,4 @@
-import Forin from "../../components/forin/Forin"
+import Forin from "../../components/Forinn/Forin"
 
 const ForinP = () => {
   return (
