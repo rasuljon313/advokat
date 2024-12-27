@@ -1,11 +1,11 @@
-import Header from "../../components/header/Header"
+import Header from "../../components/header/Header";
 
 const HeaderP = () => {
   return (
     <>
-    <Header/>
+      <Header />
     </>
-  )
-}
+  );
+};
 
-export default HeaderP
+export default HeaderP;
