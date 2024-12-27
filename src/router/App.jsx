@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom"
 import HeaderP from "../pages/header/HeaderP"
-import ForinPage from "../pages/ForinP/ForinPage"
 
 
 const App = () => {
@@ -8,7 +7,6 @@ const App = () => {
     <>
 
      <Routes>
-        <Route path="/" element={<ForinPage/>}/>
         <Route path="/home" element={<HeaderP/>}/>
      </Routes>
 
