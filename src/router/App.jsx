@@ -1,8 +1,12 @@
 const App = () => {
   return (
-    <div>
-        wrfwrfcrf
-    </div>
+    <>
+
+     <div className="container">
+        react-hot-toas
+     </div>
+
+    </>
   )
 }
 
