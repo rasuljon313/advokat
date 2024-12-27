@@ -29,6 +29,12 @@
       font-size: 14px;
       background: #1c1c1c !important;
       border-radius: 8px !important;
+      color: #fff;
+      transition: 0.3s;
+      &:hover{
+        transition: 0.3s;
+        box-shadow: 0 0 10px 1px #1c1c1c;
+      }
     }
     &_btn{
       background: #007bff !important;
