@@ -129,13 +129,13 @@ const Forin = () => {
       data: formdata,     
     })
       .then((response) => {
-        // Store the token in localStorage after successful login
-        const { token } = response.data; // Assume the response contains the token
+        const { token } = response.data; // Assuming the token is returned from API
         localStorage.setItem("tokenxon", token);
-        navigate("/home");
+        setLoading(false); // Hide loading state
+        navigate("/home"); // Navigate to home after successful login
       })
       .catch((err) => {
-        setLoading(false);
+        setLoading(false); // Hide loading state in case of an error
         setErrorMessage("Login Failed. Please check your credentials.");
         console.error("Login error:", err);
       });

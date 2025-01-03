@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import useStore from "../../zustand"; 
+import Modal from "../modal/Modal";
 
 const Header = () => {
   const navigate = useNavigate();
+  const { open, setOpen } = useStore();  
 
   useEffect(() => {
     const token = localStorage.getItem("tokenxon");
@@ -15,7 +18,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="container">Header Content</div>;
+      <div className="container">Header Content</div>
+      <button onClick={setOpen}>Toggle Modal</button> 
+      {
+        open && <Modal /> 
+      }
     </>
   );
 };
